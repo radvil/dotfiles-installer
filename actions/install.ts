@@ -210,7 +210,7 @@ const actionInstallComponents = async (
   }
 
   log.title(msg);
-  await printComponentsSummaries(finalList, "table");
+  printComponentsSummaries(finalList, "table");
 
   for await (const entry of finalList) {
     await installBuilds(machineId, entry, f);

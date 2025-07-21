@@ -8,6 +8,10 @@ import { GlobalFlags, InstallFlags, ListFlags } from "./flags.ts";
 
 /**
  * Main command-line interface for the dotfiles installer.
+ *
+ * TODO: --source or -s should fallback to default cwd.
+ * or maybe we keep the structure as `cwd/components`, not very sure just yet.
+ *
  */
 await new Command()
   .name("dotbox")

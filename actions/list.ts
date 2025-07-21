@@ -68,7 +68,7 @@ const actionListComponents = async (rawFlags: unknown) => {
     }
 
     log.title(msg);
-    await printComponentsSummaries(finalList, listType);
+    printComponentsSummaries(finalList, listType);
   } catch (e) {
     const msg = e instanceof Error ? e.message : JSON.stringify(e);
     log.error(msg);
